@@ -4,6 +4,8 @@ import { Card, TextField, Button } from "@mui/material";
 import { LoginFormData } from "../../helpers/interfaces"
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../helpers/firebaseConfig";
+
+
 const LoginForm = () => {
   const { register, handleSubmit } = useForm<LoginFormData>();
 
@@ -16,11 +18,10 @@ const LoginForm = () => {
   };
 
   return (
-    <form
-      style={{ display: "flex", flexDirection: "column" }}
+  <form style={{ display: "flex", flexDirection: "column" }}
       onSubmit={handleSubmit(logUserIn)}
     >
-        <Card sx={{ p: "1rem" }}>
+    <Card sx={{ p: "1rem" }}>
       <TextField
         variant="outlined"
         type="email"
