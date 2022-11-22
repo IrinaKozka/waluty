@@ -1,14 +1,8 @@
-<<<<<<< HEAD
-import React from 'react';
-import { Typography, Button } from '@mui/material';
-import { Link } from 'react-router-dom';
-import LoginForm from '../LoginForm/LoginForm';
-=======
+
 import React from 'react'
 import { Typography, Button } from "@mui/material";
-// import { Link } from "react-router-dom";
-// import LoginForm from "../LoginForm/LoginForm";
-
+import { Link } from "react-router-dom";
+import LoginForm from "../LoginForm/LoginForm";
 const LoginPage = () => {
   return (
     <>
@@ -31,5 +25,18 @@ const LoginPage = () => {
     </>
   );
 };
-
 export default LoginPage;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
