@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-import React from 'react';
-import { Typography, Button } from '@mui/material';
-import { Link } from 'react-router-dom';
-import LoginForm from '../LoginForm/LoginForm';
-=======
 import React from 'react'
 import { Typography, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import LoginForm from "../LoginForm/LoginForm";
->>>>>>> babef9c08ad069f2d9763c14e7543855bb332a7a
 
 const LoginPage = () => {
   return (
