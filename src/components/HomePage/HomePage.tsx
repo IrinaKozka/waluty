@@ -1,14 +1,14 @@
-import { useEffect, useState } from 'react';
-import axios from 'axios';
-import { Typography } from '@mui/material';
-import * as React from 'react';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { Typography } from "@mui/material";
+import * as React from "react";
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableContainer from "@mui/material/TableContainer";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
+import Paper from "@mui/material/Paper";
 const HomePage = () => {
   const [todaysCurrency, setTodaysCurrency] = useState([]);
   useEffect(() => {
@@ -32,13 +32,13 @@ const HomePage = () => {
     return { name, purchase, sale };
   }
   const rows = [
-    createData('Dolar', 4.8, 4.9),
-    createData('Euro', 4.6, 4.7),
-    createData('Funt brytyjski', 5.2, 5.3),
+    createData("Dolar", 4.8, 4.9),
+    createData("Euro", 4.6, 4.7),
+    createData("Funt brytyjski", 5.2, 5.3),
   ];
   return (
     <>
-      <Typography variant="h5" sx={{ my: '1rem', mx: '1rem' }}>
+      <Typography variant="h5" sx={{ my: "1rem", mx: "1rem" }}>
         Dzisiejsze kursy walut:
       </Typography>
       <TableContainer component={Paper}>
@@ -54,7 +54,7 @@ const HomePage = () => {
             {rows.map((row) => (
               <TableRow
                 key={row.name}
-                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
               >
                 <TableCell component="th" scope="row">
                   {row.name}
