@@ -13,6 +13,7 @@ import MenuItem from "@mui/material/MenuItem";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import { NavbarProps } from "../../helpers/interfaces";
+import { auth, storage } from "../../firebaseConfig"
 
 import { ref, getDownloadURL } from "firebase/storage";
 
@@ -46,4 +47,4 @@ const Navbar = () => {
   };
 
   return (
-  
+  )
